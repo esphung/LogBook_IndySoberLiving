@@ -2,7 +2,7 @@
 * @Author: Eric Phung
 * @Date:   2015-04-11 10:40:59
 * @Last Modified by:   Eric Phung
-* @Last Modified time: 2015-04-27 13:27:38
+* @Last Modified time: 2016.03.02
 // ALERT BOX CLASS <- FOR RETURN User SIGN IN
 */
 
@@ -115,66 +115,11 @@ public class LoginBox {
 		modalLeftContent.setSpacing(8);
 		ListView<String> subjectList = new ListView<>();
 		ObservableList<String> subjectItems =FXCollections.observableArrayList (
-			"ACCT",
-			"Accuplacer",
-			"Biology",
-			"Business",
-			"Capstone",
-			"CHEM101",
-			"CHEM105",
-			"CHEM106",
-			"CHEM111",
-			"CINS",
-			"Computer",
-			"Criminal Justice",
-			"Earth Science",
-			"Economics",
-			"EDU101",
-			"Electronics",
-			"ENG073",
-			"ENG083",
-			"ENG093",
-			"ENG095",
-			"ENG111",
-			"ENG112",
-			"ENG211",
-			"Engineering",
-			"ESOL",
-			"History",
-			"Human Resources",
-			"IVY101",
-			"IVY120",
-			"MATH015",
-			"MATH120",
-			"MATH121",
-			"MATH122",
-			"MATH123",
-			"MATH127",
-			"MATH128",
-			"MATH129",
-			"MATH135",
-			"MATH136",
-			"MATH137",
-			"MATH200",
-			"MATH201",
-			"MATH211",
-			"MATH212",
-			"MATH213",
-			"MATH221",
-			"MATH222",
-			"MATH261",
-			"MATH264",
-			"OTHER",
-			"PAPER",
-			"PHY101",
-			"PHY102",
-			"PHY221",
-			"PHY222",
-			"Psychology",
-			"Spanish",
-			"Speech/Communcations",
-			"Theater",
-			"Visual Basic"
+			"Food",
+			"Gas Station",
+			"Family",
+			"Meeting",
+			"Church"
 
 		);
 		subjectList.setItems(subjectItems);
@@ -182,7 +127,7 @@ public class LoginBox {
 		subjectList.setPrefHeight(PREF_SUBWINDOW_HEIGHT);
 
 
-		//modalLeftContent.getChildren().addAll(new Label("Select Reason"),subjectList);
+		modalLeftContent.getChildren().addAll(new Label("Select Reason"),subjectList);
 		modalLeftBox.getChildren().add(modalLeftContent);
 
 
